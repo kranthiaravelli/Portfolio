@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hb {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #0077b6;
+    padding-bottom: 25px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: -3px;
+    margin-top: 25px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.skillsbox {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 97%;
+    gap: 20px;
+}
+
+.sbox5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background-color: #e0f4fe;
+}
+
+.sbox5 h2 {
+    font-size: 30px;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.sbox5 p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.logos {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.logos1 {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.view {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    cursor: no-drop;
+}
+
+@media (max-width: 1344px){
+    .skillsbox {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 594px){
+    button {
+        margin-left: 25px;
+    }
+    .hb {
+        gap: 35px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+} 
+
+@media (max-width: 480px) {
+    .hb {
+        gap: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .sbox5 h2 {
+        font-size: 25px;
+    }
+    .sbox5 p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 342px){
+    .hb {
+        gap: 10px;
+    }
+    h1 {
+        font-size: 25px;
+        letter-spacing: -2px;
+    }
+}
+.end {
+    display: flex;
+    justify-content: center;
+    white-space: wrap;
+    padding: 20px;
+}
+
+.endtext {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.endtext a{
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.endtext a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 520px){
+    .endtext {
+        font-size: 10px;
+    }
+}

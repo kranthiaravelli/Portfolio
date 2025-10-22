@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: sticky;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-top: 30px;
+}
+
+nav li a{
+    padding: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: .2s ease;
+}
+
+nav li a:hover {
+    color: rgba(255, 255, 255, 0.627);
+}
+
+nav h1 {
+    font-family: 'Licorice';
+    font-size: 50px;
+    /* letter-spacing: -3px; */
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bgimage_dark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.welcome {
+    margin-top: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+    padding: 10px 20px;
+}
+
+.welcome h2 {
+    font-size: 90px;
+    letter-spacing: -4px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: white;
+    border: 3px solid white;
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Responsiveness */
+
+@media (max-width: 943px){
+    .welcome h2 {
+        font-size: 70px;
+    }
+
+    p{
+        font-size: 19px;
+        letter-spacing: -1px;
+    }
+    button {
+        font-size: 15px;
+    }
+    .nav-elements {
+        width: 180px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #090D0F;
+        display: none;
+    }
+    nav h1 {
+        font-size: 45px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 60px;
+        right: 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 720px){
+    .welcome h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 17px;
+    }
+    button {
+        font-size: 12px;
+        border: 1px solid white;
+    }
+    nav h1 {
+        font-size: 30px;
+    }
+}
+
+/* End of section 1 responsiveness */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #090D0F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 100px;
+    font-weight: 300;
+    letter-spacing: -3px;
+}
+
+.img-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    margin-top: -80px;
+}
+
+.myimage {
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.me-para {
+    margin-top: -80px;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.cont {
+    background-color: transparent;
+    color: white;
+}
+
+.cont:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 849px){
+    .img-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
+        padding-bottom: 40px;
+        height: 100vh;
+    }
+    .about {
+        font-size: 80px;
+        padding-top: 20px;
+    }
+    .myimage {
+        margin-bottom: 50px;
+        width: 350px;
+        height: 350px;
+    }
+    .me-para {
+        font-size: 14px;
+    }
+}
+@media (max-width: 993px){
+    .about {
+        font-size: 80px;
+    }
+    .me-para {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 588px){
+    .myimage {
+        width: 300px;
+        height: 300px;
+    }
+    .me-para {
+        font-size: 15px;
+    }
+}
+
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+}
+
+.headport {
+    font-size: 100px;
+    letter-spacing: -5px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.portpara {
+    font-size: 15px;
+    letter-spacing: 0;
+    color: rgb(23, 23, 23);
+}
+
+.ppara {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.sorry {
+    margin-top: -120px;
+    margin-bottom: 40px;
+    width: 150px;
+    height: auto;
+}
+
+#skills {
+    width: 100%;
+    height: auto;
+    background-color: #090D0F;
+    padding: 40px;
+    color: white;
+}
+
+.skill {
+    font-size: 100px;
+    letter-spacing: -5px;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.skillbox {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    background-color: #131a1e;
+    /* border: 1px solid rgb(40, 40, 40); */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sbox1 {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: #090D0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid rgb(40, 40, 40); */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s ease, box-shadow .3s ease;
+}
+.sbox1:hover {
+    transform: scale(1.02); /* Scales up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+.sbox3 {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    background-color: #090D0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    /* border: 1px solid rgb(40, 40, 40); */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s ease, box-shadow .3s ease;
+
+}
+.sbox4 {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    background-color: #090D0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    /* border: 1px solid rgb(40, 40, 40); */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s ease, box-shadow .3s ease;
+
+}
+.sbox4:hover {
+    transform: scale(1.02); /* Scales up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+.sbox3:hover {
+    transform: scale(1.02); /* Scales up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+.sbox2 {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    background-color: #090D0F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s ease, box-shadow .3s ease;
+}
+.sbox2:hover {
+    transform: scale(1.02); /* Scales up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+.sbox1 h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.sbox2 h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.sbox3 h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.sbox4 h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.sbox4 p {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.sbox1 p {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.sbox2 p {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.sbox3 p {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+@media (max-width: 1067px){
+    .skillbox {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #skills {
+        height: auto;
+    }
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #090D0F;
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.conthead {
+    font-size: 100px;
+    letter-spacing: -7px;
+    color: white;
+    font-weight: 300;
+}
+
+.contbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.contbox p {
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.contbox a {
+    color: white;
+    text-decoration: none;
+}
+
+.contbox a:hover {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background-color: #131a1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+}
+
+.seeking {
+    font-size: 13px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.seeking a {
+    color: rgb(254, 119, 119);
+    padding-right: 4px;
+    text-decoration: none;
+}
+
+.seeking a:hover {
+    text-decoration: underline;
+}
+
+.view {
+    color: grey;
+    border: none;
+    cursor: no-drop;
+    background-color: transparent;
+}
+.view:hover {
+    border: none;
+    color: grey;
+}
